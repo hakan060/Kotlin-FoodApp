@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeFragment">
+
+
+    <EditText
+        android:id="@+id/foodMaterialsText"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Enter Food Material"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodNameText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="357dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="choosen_photo"
+        android:src="@drawable/click_to_select_image"
+        app:layout_constraintBottom_toTopOf="@+id/foodNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/foodNameText"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Enter Food Name "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/foodMaterialsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="139dp"
+        android:onClick="save"
+        android:text="Save "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodMaterialsText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
